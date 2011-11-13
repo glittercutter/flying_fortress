@@ -10,11 +10,11 @@ Input.MoveLeft = "a"
 Input.MoveRight = "d"
 Input.Fire = "l"
 
-math.randomseed(love.timer.getTime())
-
 
 function love.load()
-	font = love.graphics.newFont(love._vera_ttf, 10)
+    math.randomseed(os.time())
+
+    font = love.graphics.newFont(love._vera_ttf, 10)
 
 	love.graphics.setFont(font)
 	love.graphics.setColor(200, 200, 200)
