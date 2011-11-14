@@ -13,7 +13,6 @@ Input.Fire = "l"
 
 function love.load()
     math.randomseed(os.time())
-    print(os.time())
 
     font = love.graphics.newFont(love._vera_ttf, 10)
 

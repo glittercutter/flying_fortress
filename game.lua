@@ -26,6 +26,7 @@ function State:onBegin(lastState)
     self.LevelNo = 0
     self:loadNextLevel()
     self.BMG = love.audio.play("data/bmg.ogg", "stream", true)
+    love.graphics.setBackgroundColor(80, 80, 130)
 end
 
 

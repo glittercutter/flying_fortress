@@ -131,7 +131,7 @@ function Fortress:onUpdate(dt, targets)
         self.VelY = 0;
     end
 
-    self.FlyingVel = (((self.X - ArenaLimit.X1) / ArenaLimit.X2) * (self.MinFlyingVel - self.MaxFlyingVel)) + self.MinFlyingVel
+    self.FlyingVel = (((self.X - ArenaLimit.X1) / ArenaLimit.X2) * (self.MaxFlyingVel - self.MinFlyingVel)) + self.MinFlyingVel
     self.X = self.X + self.FlyingVel * dt
     
     local mx, my = love.mouse.getPosition()
